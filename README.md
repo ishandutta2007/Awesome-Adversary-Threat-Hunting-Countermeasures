@@ -32,79 +32,30 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The global threat hunting and Managed Detection and Response (MDR) market is estimated at approximately **$5B–$7B in 2024–2026** and projected to surpass **$15B–$20B by 2030** (~20%+ CAGR), driven by chronic security talent shortages, rapid adversary dwell time acceleration, and agentic AI threat surface expansions. The market is **moderately fragmented with strong consolidation towards platform leaders** (e.g., Microsoft, CrowdStrike, and Palo Alto Networks capturing dominant enterprise market share, alongside ongoing acquisitions of specialized intelligence and MDR players by mega-cap platforms).
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[CrowdStrike Falcon Adversary OverWatch](https://www.crowdstrike.com/)**
-
-  **Elite managed threat hunting service** with human hunters backed by AI at machine speed. Tracks **280+ sophisticated adversaries** (nation-state, eCrime, hacktivist); analyzes up to **6.2 trillion events per day**; adds **1,800+ new hunting patterns annually**; detects **100 high-to-critical severity intrusions daily**. Customers report up to **500x alert volume reduction** with **98% true positives** and **95% reduction in hunting staffing costs**. Falcon OverWatch for Defender extends hunting to Microsoft Defender environments without replacing existing endpoint protection . **Pricing**: Quote-only; enterprise contracts. **Free tier**: None. **Best for**: organizations wanting elite human-led hunting across their telemetry without building an internal hunting team.
-
-
-
-- **[Mandiant Threat Intelligence & Hunting](https://www.mandiant.com/)** (Google Cloud)
-
-  **Threat intelligence and managed hunting** from the frontline incident response experts. Mandiant Managed Services provides continuous monitoring, expert threat hunting, and rapid incident response. Now part of Google Cloud, continuing product-agnostic consulting and intelligence services . Integration with SentinelOne enables automated enrichment of Singularity XDR telemetry with Mandiant intelligence, plus 24×7 expert-led monitoring and hunting . **Pricing**: Quote-only. **Free tier**: None. **Best for**: enterprises wanting intelligence-driven hunting grounded in real-world breach response experience.
-
-
-
-- **[Recorded Future](https://www.recordedfuture.com/)**
-
-  **Threat intelligence platform** with Cyber Operations for intelligence-driven defense. **Agentic processing** turns vulnerability signals into detection signatures in as little as **30 minutes**; **350+ malware families** mapped at sub-procedure level with MITRE ATT&CK; **1.5M+ malware samples** detonated daily; pre-written YARA, Snort, and Sigma rules. **Autonomous Threat Operations** executes hunting, detection, and response continuously with minimal human intervention . **Pricing**: Quote-only; Gartner reviewers note high pricing and module complexity . **Free tier**: None. **Best for**: SOC teams wanting to operationalize threat intelligence with automated detection generation and enrichment.
-
-
-
-- **[Palo Alto Unit 42](https://www.paloaltonetworks.com/)**
-
-  **Managed threat hunting and incident response** from Palo Alto's threat intelligence team. **Unit 42 Managed Agentic Endpoint Security** provides 24/7 hunting for AI-related threats and zero-days. **Managed XSIAM 2.0** delivers a managed SOC with continuous detection, investigation, and full-cycle remediation; includes **Breach Response Guarantee with up to 250 hours of Unit 42 IR** . **Pricing**: Quote-only. **Free tier**: None. **Best for**: enterprises wanting a managed SOC with frontline intelligence and pre-authorized response workflows.
-
-
-
-- **[SentinelOne Singularity](https://www.sentinelone.com/)**
-
-  **AI-native endpoint and threat intelligence** platform with autonomous detection. Achieved **100% detection with no delays** in MITRE ATT&CK evaluations . Integrates with Mandiant for intelligence enrichment and 24×7 managed hunting . **Pricing**: Quote-only; tiered by endpoint count. **Free tier**: None. **Best for**: organizations wanting autonomous endpoint protection with optional expert hunting augmentation.
-
-
-
-- **[Red Canary](https://redcanary.com/)**
-
-  **Managed Detection and Response (MDR)** with **99% accuracy** and **97% of investigations handled by the platform**. AI agents reduce investigation time by **90% on average**. Expanded identity and cloud security detection; launched Security Data Lake for cost-efficient storage . **Pricing**: Quote-only. **Free tier**: None. **Best for**: mid-market teams wanting MDR with high automation and minimal analyst overhead.
-
-
-
-- **[Microsoft Threat Experts](https://www.microsoft.com/security/)** (Defender Experts)
-
-  **Managed hunting for Microsoft Defender** customers. **Endpoint Attack Notifications** provide proactive hunting for human adversary intrusions and hands-on-keyboard attacks, delivered as hand-crafted alerts . **Defender Experts for Hunting** extends proactive hunting across endpoints, Office 365, cloud apps, and identity. **Note**: New customer intake for Endpoint Attack Notifications is currently paused—sign up for Defender Experts service request form. **Pricing**: Included with eligible Defender licenses; quote-only. **Free tier**: None. **Best for**: Microsoft Defender customers wanting native managed hunting without additional vendors.
-
-
-
-- **[Secureworks Taegis](https://www.secureworks.com/)**
-
-  **Managed detection and countermeasures** with **Managed iSensor IPS**. **Counter Threat Unit (CTU)** develops **thousands of unique countermeasures** integrated into iSensor; automatic updates and expert device management. 24/7 monitoring of network traffic with threat actor activity detection and blocking . **Pricing**: Quote-only. **Free tier**: None. **Best for**: network-focused security teams wanting managed IPS with proprietary countermeasures.
-
-
-
-- **[Cybereason Nocturnus](https://www.cybereason.com/)**
-
-  **Threat hunting platform** with Nocturnus research team. Provides proactive hunting via MalOps (malicious operations) and IOBs (Indicators of Behavior) beyond basic IOCs. Achieved **highest MITRE ATT&CK score in history**: 100% prevention, 100% real-time detection, and only vendor with 100% visibility across all OS . **Pricing**: Quote-only. **Free tier**: None. **Best for**: SOC teams wanting behavioral hunting with strong MITRE coverage.
-
-
-
-- **[Flashpoint](https://flashpoint.io/)**
-
-  **Threat intelligence platform** with primary-source data from underground communities. **Threat-Informed EASM** maps external attack surface to vulnerability intelligence; **Business-Aligned PIRs** formalize priority intelligence requirements; **Managed Attribution Browser** enables safe investigation of criminal communities without infrastructure risk . **Pricing**: Quote-only. **Free tier**: None. **Best for**: intelligence teams needing primary-source adversary data and safe underground research capabilities.
-
-
+| Platform | Company Size (Revenue / Valuation) | Pricing | Free Tier / Free Trial Limits | Key Capabilities & Highlights |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft Threat Experts](https://www.microsoft.com/security/)** (Defender Experts) | **~$3.1T Market Cap** / $245B+ Annual Revenue | Starts at **$5.20/user/month** (Defender for Endpoint P2 prerequisite) or **$60/user/month** (Microsoft 365 E5 suite); Defender Experts add-on via enterprise agreement | **30-day free trial** of Microsoft Defender for Endpoint P2 (up to 25 devices/licenses) or Microsoft 365 E5 trial (up to 25 user licenses) | Native managed hunting across endpoints, identity, and cloud apps with proactive Endpoint Attack Notifications and hands-on-keyboard adversary tracking. |
+| **[Mandiant Threat Intelligence & Hunting](https://www.mandiant.com/)** (Google Cloud) | **~$2.1T Market Cap** (Alphabet) / $6.1B Google acquisition | Lower-tier packages start at **~$75,000/year**; enterprise contracts average **~$83,000–$100,000+/year** | **Free Community Tier** with baseline actor & malware visibility; **14-day free trial** of Mandiant Advantage unlocking full actor profiles and malware analysis | Frontline breach response intelligence, continuous managed threat hunting, and automated Singularity XDR/SecOps enrichment. |
+| **[Palo Alto Unit 42](https://www.paloaltonetworks.com/)** | **~$320B Market Cap** / $9.2B Annual Revenue | Cortex XDR Pro starts at **~$50–$60/endpoint/year**; Unit 42 Managed Detection & XSIAM custom enterprise bundles start at **~$40,000+/year** | **30-day guided Proof of Concept (PoC)** with scoped test endpoints through sales engineering (no self-serve free trial) | 24/7 hunting for zero-days and AI threats via Managed XSIAM 2.0 and Managed Agentic Endpoint Security; includes up to 250 hours of breach response guarantee. |
+| **[CrowdStrike Falcon Adversary OverWatch](https://www.crowdstrike.com/)** | **~$270B Market Cap** / $4.8B+ Annual Revenue | Falcon Enterprise (bundled with OverWatch) starts at **$184.99/device/year** (or ~$19.99/device/month) | **15-day free trial** of Falcon platform (endpoint protection and core EDR features; managed human hunting evaluated via sales PoC) | Elite human-led threat hunting backed by AI telemetry analyzing 6.2T+ events/day, tracking 280+ adversaries, and providing OverWatch for Defender. |
+| **[SentinelOne Singularity](https://www.sentinelone.com/)** | **~$7.5B Market Cap** / $821.5M Annual Revenue | **Singularity Core** starts at **$69.99/endpoint/year** (Singularity Complete EDR at $179.99/endpoint/year, Commercial MDR/Hunting at $229.99/endpoint/year) | **30-day free trial / PoC** (and partner-sponsored POCs up to 90 days) with full AI detection and automated remediation features | AI-native autonomous detection with 100% MITRE ATT&CK coverage, Deep Visibility telemetry, and Mandiant 24x7 hunting augmentation. |
+| **[Recorded Future](https://www.recordedfuture.com/)** | **$2.65B Valuation** (Mastercard acquisition) / ~$300M+ ARR | Single-module packages start at **$40,000–$60,000/year** (core/enterprise tiers range from $75,000 to $200,000+/year) | **No self-service free tier or trial**; 14-to-30 day guided proof of concept (PoC) available upon qualified sales request | Agentic threat intelligence processing converting signals into signatures in 30 minutes, 1.5M+ malware detonated daily, and Autonomous Threat Operations. |
+| **[Secureworks Taegis](https://www.secureworks.com/)** | **$859M Valuation** (Sophos acquisition) / ~$360M Revenue | Taegis XDR platform starts at **$43,000/year for 1,000 endpoints** (~$43/endpoint/year); Taegis ManagedXDR/MDR starts at **~$70–$100/endpoint/year** | **14-day free trial** capped at **up to 200 devices** and 3 user accounts; 30-day enterprise marketplace PoC | Managed detection and countermeasures with Managed iSensor IPS powered by thousands of unique Counter Threat Unit (CTU) countermeasures. |
+| **[Cybereason Nocturnus](https://www.cybereason.com/)** | **~$850M Valuation** (Acquired by LevelBlue) / ~$150M ARR | Base NGAV/EDR starts at **~$30–$70/endpoint/year**; full MDR & Nocturnus hunting suites scale higher | **No self-service free tier**; 30-day proof of concept (PoC) evaluation available upon enterprise sales request | MalOps and Indicators of Behavior (IOBs) hunting engine backed by Nocturnus team with 100% MITRE ATT&CK real-time detection and prevention. |
+| **[Red Canary](https://redcanary.com/)** | **$675M Valuation** (Zscaler acquisition) / $140M+ ARR | Base MDR coverage starts at **$120/endpoint/year** (~$10/endpoint/month), $100/user/year for identity, and $250/resource/year for cloud | **No self-service free tier**; customized 14-to-30 day pilot evaluation / PoC provided via sales and AWS Marketplace | Managed Detection and Response (MDR) with 99% accuracy, automated investigation agents cutting triage time by 90%, and Security Data Lake. |
+| **[Flashpoint](https://flashpoint.io/)** | **~$100M+ ARR** / ~$500M+ estimated valuation | Standalone Ignite user seat licenses start at **$19,600/seat/year**; comprehensive CTI platform bundles start at **$100,000–$115,000/year** | **No self-service free tier**; 30-to-90 day evaluated pilot / PoC available for enterprise and public-sector procurement | Primary-source underground community intelligence, Threat-Informed EASM, and Managed Attribution Browser for safe darknet investigation. |
 
 ## Open-Source GitHub Projects
 
