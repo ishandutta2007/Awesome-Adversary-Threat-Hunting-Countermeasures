@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="50%" stop-color="#0d1527"/>
+      <stop offset="100%" stop-color="#07090e"/>
+    </linearGradient>
+    
+    <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+
+    <linearGradient id="accent-red" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff0844"/>
+      <stop offset="100%" stop-color="#ffb199"/>
+    </linearGradient>
+
+    <linearGradient id="shield-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#7f00ff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ff007f" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="radar-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 242, 254, 0.05)" stroke-width="1"/>
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-red" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1); opacity: 0.35; }
+      50% { transform: scale(1.15); opacity: 0.65; }
+    }
+    @keyframes radarSweep {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes scanLine {
+      0% { transform: translateY(-50px); opacity: 0; }
+      20% { opacity: 0.8; }
+      80% { opacity: 0.8; }
+      100% { transform: translateY(420px); opacity: 0; }
+    }
+    @keyframes floatParticle {
+      0%, 100% { transform: translateY(0px) translateX(0px); }
+      50% { transform: translateY(-12px) translateX(8px); }
+    }
+    @keyframes pingTarget {
+      0% { r: 4; opacity: 1; }
+      100% { r: 24; opacity: 0; }
+    }
+    .orb-red {
+      transform-origin: 1020px 210px;
+      animation: pulseOrb 6s ease-in-out infinite;
+    }
+    .orb-cyan {
+      transform-origin: 150px 100px;
+      animation: pulseOrb 8s ease-in-out infinite 1s;
+    }
+    .sweep-arm {
+      transform-origin: 1020px 210px;
+      animation: radarSweep 10s linear infinite;
+    }
+    .scanner {
+      animation: scanLine 7s ease-in-out infinite;
+    }
+    .particle {
+      animation: floatParticle 4s ease-in-out infinite;
+    }
+    .ping-circle {
+      animation: pingTarget 2.5s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    }
+  </style>
+
+  <!-- Deep Canvas Background -->
+  <rect width="1200" height="420" fill="url(#bg-grad)" rx="16"/>
+  <rect width="1200" height="420" fill="url(#radar-grid)" rx="16"/>
+
+  <!-- Dynamic Glowing Orbs in Background -->
+  <circle class="orb-cyan" cx="150" cy="100" r="160" fill="#00f2fe" opacity="0.12" filter="url(#glow-cyan)"/>
+  <circle class="orb-red" cx="1020" cy="210" r="180" fill="#ff0844" opacity="0.1" filter="url(#glow-red)"/>
+
+  <!-- Scanning Laser Line in Background -->
+  <g class="scanner">
+    <line x1="0" y1="0" x2="1200" y2="0" stroke="rgba(0, 242, 254, 0.35)" stroke-width="1.5" filter="url(#glow-cyan)"/>
+    <rect x="0" y="-15" width="1200" height="15" fill="url(#accent-cyan)" opacity="0.04"/>
+  </g>
+
+  <!-- Radar Threat Visualizer (Right Flank Graphic) -->
+  <g transform="translate(1020, 210)">
+    <!-- Radar concentric rings -->
+    <circle cx="0" cy="0" r="140" fill="none" stroke="rgba(0, 242, 254, 0.15)" stroke-width="1" stroke-dasharray="4 4"/>
+    <circle cx="0" cy="0" r="100" fill="none" stroke="rgba(0, 242, 254, 0.2)" stroke-width="1"/>
+    <circle cx="0" cy="0" r="60" fill="none" stroke="rgba(0, 242, 254, 0.25)" stroke-width="1" stroke-dasharray="2 2"/>
+    <circle cx="0" cy="0" r="20" fill="none" stroke="rgba(0, 242, 254, 0.3)" stroke-width="1"/>
+    
+    <!-- Radar crosshairs -->
+    <line x1="-150" y1="0" x2="150" y2="0" stroke="rgba(0, 242, 254, 0.15)" stroke-width="1"/>
+    <line x1="0" y1="-150" x2="0" y2="150" stroke="rgba(0, 242, 254, 0.15)" stroke-width="1"/>
+
+    <!-- Rotating radar beam -->
+    <g class="sweep-arm">
+      <path d="M 0 0 L 120 -80 A 140 140 0 0 0 -30 -137 Z" fill="url(#accent-cyan)" opacity="0.18"/>
+      <line x1="0" y1="0" x2="120" y2="-80" stroke="#00f2fe" stroke-width="1.5" opacity="0.8"/>
+    </g>
+
+    <!-- Detected Adversary Blips -->
+    <g transform="translate(45, -55)">
+      <circle cx="0" cy="0" r="4" fill="#ff0844" filter="url(#glow-red)"/>
+      <circle class="ping-circle" cx="0" cy="0" fill="none" stroke="#ff0844" stroke-width="1.5"/>
+      <text x="8" y="4" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#ff758c" letter-spacing="1">APT-29 [C2]</text>
+    </g>
+
+    <g transform="translate(-65, 45)">
+      <circle cx="0" cy="0" r="3.5" fill="#ffb199" filter="url(#glow-red)"/>
+      <text x="8" y="4" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" fill="#ffb199" letter-spacing="1">BEACON</text>
+    </g>
+
+    <g transform="translate(70, 60)">
+      <circle cx="0" cy="0" r="3" fill="#00f2fe" filter="url(#glow-cyan)"/>
+      <text x="8" y="4" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" fill="#00f2fe" letter-spacing="1">PROBE</text>
+    </g>
+  </g>
+
+  <!-- Left Side Badges/Pills Background Graphic -->
+  <g class="particle" transform="translate(70, 48)">
+    <rect width="180" height="28" rx="14" fill="rgba(0, 242, 254, 0.08)" stroke="rgba(0, 242, 254, 0.3)" stroke-width="1"/>
+    <circle cx="14" cy="14" r="4" fill="#00f2fe" filter="url(#glow-cyan)"/>
+    <text x="26" y="18" font-family="'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="11" fill="#00f2fe" letter-spacing="1.5">PROACTIVE DEFENSE</text>
+  </g>
+
+  <!-- FOREGROUND CONTENT: Header Titles & Subtitles (Always Crisp and Fully Visible) -->
+  <g transform="translate(70, 130)">
+    <!-- Main Title Line 1 -->
+    <text x="0" y="0" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-weight="900" font-size="44" fill="#ffffff" letter-spacing="-0.5">
+      ADVERSARY THREAT HUNTING
+    </text>
+    
+    <!-- Main Title Line 2 (Gradient Emphasis) -->
+    <text x="0" y="52" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-weight="900" font-size="44" fill="url(#accent-cyan)" letter-spacing="-0.5">
+      &amp; COUNTERMEASURES
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="100" font-family="'Segoe UI', Roboto, sans-serif" font-weight="400" font-size="17" fill="#94a3b8" letter-spacing="0.2">
+      Curated Intelligence, Managed MDR Telemetry, Detection Engineering &amp; Open Source Workbenches
+    </text>
+
+    <!-- Capability Tags in Foreground -->
+    <g transform="translate(0, 138)">
+      <!-- Tag 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="125" height="32" rx="8" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+        <text x="14" y="21" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="12" fill="#e2e8f0">🛡️ MITRE ATT&amp;CK</text>
+      </g>
+      <!-- Tag 2 -->
+      <g transform="translate(137, 0)">
+        <rect width="138" height="32" rx="8" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+        <text x="14" y="21" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="12" fill="#e2e8f0">🔍 Threat Intel / CTI</text>
+      </g>
+      <!-- Tag 3 -->
+      <g transform="translate(287, 0)">
+        <rect width="128" height="32" rx="8" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+        <text x="14" y="21" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="12" fill="#e2e8f0">⚡ Sigma &amp; YARA</text>
+      </g>
+      <!-- Tag 4 -->
+      <g transform="translate(427, 0)">
+        <rect width="145" height="32" rx="8" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+        <text x="14" y="21" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="12" fill="#e2e8f0">🎯 Adversary Emulation</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Border Accent -->
+  <rect x="0.5" y="0.5" width="1199" height="419" rx="15.5" fill="none" stroke="rgba(0, 242, 254, 0.2)" stroke-width="1"/>
+</svg>

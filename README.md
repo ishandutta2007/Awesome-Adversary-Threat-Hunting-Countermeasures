@@ -1,48 +1,46 @@
-# Awesome-Adversary-Threat-Hunting-Countermeasures
+# Awesome Adversary Threat Hunting & Countermeasures 🎯🛡️
 
-# Awesome-Adversary-Threat-Hunting-Countermeasures
+<div align="center">
 
-**Top Adversary Threat Hunting Countermeasures (Opensource) 🌟 Star if you like it! 🌟**
+![Adversary Threat Hunting and Countermeasures Banner](./assets/banner.svg)
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Adversary-Threat-Hunting-Countermeasures/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Adversary-Threat-Hunting-Countermeasures?style=for-the-badge&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Adversary-Threat-Hunting-Countermeasures/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Adversary-Threat-Hunting-Countermeasures?style=for-the-badge&color=blue" alt="GitHub Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Adversary-Threat-Hunting-Countermeasures/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Adversary-Threat-Hunting-Countermeasures?style=for-the-badge&color=orange" alt="GitHub Issues"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Adversary-Threat-Hunting-Countermeasures/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Adversary-Threat-Hunting-Countermeasures?style=for-the-badge&color=green" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+**A curated, production-grade directory of enterprise SaaS platforms and top open-source repositories for proactive threat hunting, adversary intelligence (CTI), detection engineering, adversary emulation, and automated countermeasures.**
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**
+🌟 *Star the repository if you find it helpful for your SOC, DFIR, or security engineering operations!* 🌟
 
-*Focused on Managed Threat Hunting, Adversary Intelligence, Detection Engineering & Countermeasures*
+</div>
 
-**Last updated: October 2026**
+---
 
+## 📑 Table of Contents
 
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS & Hosted Commercial Platforms](#-saas--hosted-commercial-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#️-disclaimer)
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Adversary Threat Hunting & Countermeasures**. These tools enable security teams to proactively hunt for stealthy adversaries, operationalize threat intelligence, and deploy countermeasures before attacks escalate—from fully managed threat hunting services with elite human hunters and adversary intelligence to self-hosted hunting workbenches and detection pipelines that give SOC teams full control over their telemetry and hunt logic.
+---
 
-
-
-**Examples** include CrowdStrike Falcon Adversary OverWatch, Mandiant Threat Intelligence & Hunting, Recorded Future, Palo Alto Unit 42, SentinelOne Singularity, Red Canary, Microsoft Threat Experts, Secureworks Taegis, Cybereason Nocturnus, and Flashpoint (the category leaders in commercial space).
-
-
-
-**Open-source emphasis**: This section is expanded with every relevant project for self-hosting, threat hunting, and open detection infrastructure. **Critical note**: True open-source managed threat hunting—with elite human hunters analyzing trillions of events and adversary intelligence teams tracking nation-state actors—does not exist as a SaaS replacement. The projects below provide **hunting workbenches**, **detection pipelines**, and **analysis tools** that SOC analysts operate themselves. No open-source project replicates the human expertise and global telemetry of CrowdStrike OverWatch or Mandiant.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## Sector Overview & Market Dynamics
+## 🌐 Sector Overview & Market Dynamics
 
 The global threat hunting and Managed Detection and Response (MDR) market is estimated at approximately **$5B–$7B in 2024–2026** and projected to surpass **$15B–$20B by 2030** (~20%+ CAGR), driven by chronic security talent shortages, rapid adversary dwell time acceleration, and agentic AI threat surface expansions. The market is **moderately fragmented with strong consolidation towards platform leaders** (e.g., Microsoft, CrowdStrike, and Palo Alto Networks capturing dominant enterprise market share, alongside ongoing acquisitions of specialized intelligence and MDR players by mega-cap platforms).
 
-## SaaS/Hosted Platforms
+---
+
+## 🏢 SaaS & Hosted Commercial Platforms
 
 | Platform | Company Size (Revenue / Valuation) | Pricing | Free Tier / Free Trial Limits | Key Capabilities & Highlights |
 | :--- | :--- | :--- | :--- | :--- |
@@ -57,96 +55,72 @@ The global threat hunting and Managed Detection and Response (MDR) market is est
 | **[Red Canary](https://redcanary.com/)** | **$675M Valuation** (Zscaler acquisition) / $140M+ ARR | Base MDR coverage starts at **$120/endpoint/year** (~$10/endpoint/month), $100/user/year for identity, and $250/resource/year for cloud | **No self-service free tier**; customized 14-to-30 day pilot evaluation / PoC provided via sales and AWS Marketplace | Managed Detection and Response (MDR) with 99% accuracy, automated investigation agents cutting triage time by 90%, and Security Data Lake. |
 | **[Flashpoint](https://flashpoint.io/)** | **~$100M+ ARR** / ~$500M+ estimated valuation | Standalone Ignite user seat licenses start at **$19,600/seat/year**; comprehensive CTI platform bundles start at **$100,000–$115,000/year** | **No self-service free tier**; 30-to-90 day evaluated pilot / PoC available for enterprise and public-sector procurement | Primary-source underground community intelligence, Threat-Informed EASM, and Managed Attribution Browser for safe darknet investigation. |
 
-## Open-Source GitHub Projects
+---
 
+## 💻 Open-Source GitHub Projects
 
+Curated open-source threat hunting workbenches, detection rule repositories, adversary emulation engines, forensic telemetry tools, and network analysis pipelines. Sorted by GitHub star count in descending order.
 
-- **[pcap-hunter](https://github.com/ninedter/pcap-hunter)**
-
-  **AI-assisted threat-hunting workbench for SOC and DFIR analysts** (license per repo) — **the most purpose-built open-source hunting workbench** found in this research. **Features**: Turns raw PCAPs into actionable intelligence via **Zeek + tshark pipeline**; **C2/beacon detection**; **JA3 fingerprinting**; **MITRE ATT&CK mapping**; **OSINT enrichment**; multilingual reports from local or cloud LLMs; YARA rule support; Docker deployment with persistent case database. Runs entirely self-hosted with optional LLM integration (OpenAI, Anthropic, or local LM Studio) . **Tech stack**: Python, Streamlit, Zeek, tshark, YARA, FastAPI. **Deploy**: Docker Compose or standalone install script (macOS, Linux, Windows via WSL2). **Trade-off**: **PCAP-focused**—it analyzes network captures, not endpoint telemetry or cloud logs. Requires Zeek for full pipeline (no native Windows build). LLM features require API keys or local model setup. **Best for**: SOC analysts and DFIR investigators wanting an AI-assisted workbench for network traffic analysis with C2 detection, JA3 fingerprinting, and MITRE mapping—without commercial tooling.
-
-
-
-- **[Sigma](https://github.com/SigmaHQ/sigma)**
-
-  **Generic signature format for SIEM systems** (Detection Rule License) — **the de facto standard for vendor-agnostic detection rules**, enabling threat hunters to write once and deploy across SIEMs. **Features**: Hundreds of community-contributed detection rules covering MITRE ATT&CK techniques; conversion tools (sigmac, pySigma) to translate rules into Splunk, Elastic, QRadar, and other SIEM query languages; regular updates from the community and vendors. **Tech stack**: YAML rules, Python tooling. **Deploy**: Rules deployed to your SIEM via conversion tools. **Trade-off**: **Rules, not a platform**—Sigma provides detection content but no execution engine, no telemetry collection, and no hunting workflow. You still need a SIEM and analysts to operationalize. **Best for**: detection engineers and SOC teams wanting portable, community-maintained detection rules they can deploy across any SIEM.
-
-
-
-- **[YARA](https://github.com/VirusTotal/yara)**
-
-  **Pattern matching tool for malware identification** (Apache 2.0) — **the standard for signature-based hunting and malware classification**. **Features**: Rule-based pattern matching for files, memory, and processes; widely integrated across security tools (VirusTotal, EDRs, sandboxes); extensive rule repositories from vendors and researchers (Recorded Future provides pre-written YARA rules ). **Tech stack**: C, Python bindings. **Deploy**: CLI, library, or integrated into hunting pipelines. **Trade-off**: **Signature tool, not a hunting platform**—YARA matches known patterns; it does not provide telemetry, behavioral analytics, or workflow. **Best for**: malware analysts and detection engineers needing pattern-matching capabilities within a broader hunting stack.
-
-
-
-- **[Velociraptor](https://github.com/Velocidex/velociraptor)**
-
-  **Endpoint visibility and digital forensics platform** (Apache 2.0) — **the leading open-source tool for endpoint threat hunting at scale**. **Features**: VQL (Velociraptor Query Language) for interrogating endpoints; real-time monitoring; hunts across thousands of endpoints; artifact collection for DFIR; client-side caching for offline endpoints. **Tech stack**: Go. **Deploy**: Self-hosted server + agents. **Trade-off**: **Requires VQL expertise**—powerful but steep learning curve. Not a managed service; you write hunts and analyze results. **Best for**: DFIR and threat hunting teams wanting deep endpoint interrogation without commercial EDR licensing.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **MISP** — Open-source threat intelligence sharing platform (AGPL-3.0). IOC management, correlation, and sharing across communities. **Note**: Intelligence sharing, not hunting execution. **Best for**: teams needing collaborative IOC management.
-
-- **TheHive** — Security incident response platform (AGPL-3.0) with case management and Cortex analyzers. **Note**: Case management and orchestration, not proactive hunting. **Best for**: SOC teams needing structured incident response workflows.
-
-- **Zeek** — Network analysis framework (BSD) for passive traffic monitoring and protocol parsing. **Note**: Network visibility infrastructure, not a hunting workflow tool. **Best for**: teams building custom network detection pipelines.
-
-
-
-**Frameworks for building custom systems**: Combine **pcap-hunter** as an AI-assisted network hunting workbench with **Velociraptor** for endpoint interrogation, **Sigma** for portable detection rules, and **YARA** for pattern matching—creating a self-hosted hunting stack. **None of these provide the human expertise, global telemetry, or managed service** of CrowdStrike OverWatch, Mandiant, or Unit 42. Those require commercial engagements.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, license (for open-source), and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Threat hunting platforms handling security telemetry and incident data must comply with data protection regulations (GDPR, CCPA, etc.) and implement appropriate access controls for sensitive security data.
-
-- **The "managed threat hunting service" vs. "threat intelligence platform" vs. "hunting workbench" vs. "detection content" distinction is critical.** **CrowdStrike OverWatch, Mandiant Managed Services, Red Canary, Unit 42 Managed XSIAM, Microsoft Threat Experts, and Secureworks Taegis** are **managed hunting services**—they provide human hunters, global telemetry, and often response actions. **Recorded Future and Flashpoint** are **threat intelligence platforms**—they provide adversary intelligence but not hunting execution. **Cybereason and SentinelOne** are **endpoint platforms** with hunting capabilities. **pcap-hunter** is a **hunting workbench**—it analyzes PCAPs with AI assistance but requires you to operate it. **Sigma, YARA, Velociraptor, MISP, and TheHive** are **content, tools, or platforms** that support hunting but are not hunting services. **No open-source project replicates the human expertise and scale of CrowdStrike OverWatch or Mandiant.**
-
-- **CrowdStrike OverWatch is the benchmark for managed hunting at scale.** 6.2 trillion events analyzed daily, 280+ adversaries tracked, 1,800+ new hunting patterns annually, and 98% true positive rate are numbers no open-source project can match . **The trade-off**: enterprise pricing and dependency on CrowdStrike's intelligence apparatus.
-
-- **Microsoft Threat Experts is notable for Defender-native hunting** but **new customer intake for Endpoint Attack Notifications is paused** . Defender Experts for Hunting is the current path. **Verify availability before planning.**
-
-- **pcap-hunter is the most directly relevant open-source project** for AI-assisted hunting, but it is **PCAP-focused**—it will not hunt across endpoint, cloud, or identity telemetry . Pair it with Velociraptor for endpoint visibility and Sigma for portable detection rules.
-
-- **Sigma and YARA are content standards, not platforms.** They provide the detection logic that hunting teams deploy, but they do not collect telemetry, execute hunts, or manage cases. **They are force multipliers for teams that already have a SIEM and analysts.**
-
-- **Pricing opacity is universal across commercial vendors.** CrowdStrike, Mandiant, Recorded Future, Unit 42, SentinelOne, Red Canary, Microsoft, Secureworks, Cybereason, and Flashpoint all require sales contact for quotes. Recorded Future reviewers note high pricing and module complexity . **Validate with direct vendor conversations against your telemetry volume and hunting maturity.**
-
-- Self-hosted open-source solutions require proper server setup, security hardening, and ongoing maintenance. **Threat hunting data contains sensitive security telemetry**—ensure your deployment meets your organization's security and privacy requirements before connecting production systems.
-
-
+| Repository | GitHub Stars Badge | Primary Category | License | Core Capabilities & Hunting Highlights |
+| :--- | :--- | :--- | :--- | :--- |
+| **[osquery/osquery](https://github.com/osquery/osquery)** | [![GitHub stars](https://img.shields.io/github/stars/osquery/osquery?style=social&color=white)](https://github.com/osquery/osquery/stargazers) | Endpoint Telemetry & Instrumentation | Apache-2.0 / Custom | SQL-powered operating system instrumentation, monitoring, and analytics. Enables hunting analysts to query endpoints (processes, socket connections, loaded kernel modules, file integrity) using standard SQL queries across Linux, macOS, and Windows. |
+| **[redcanaryco/atomic-red-team](https://github.com/redcanaryco/atomic-red-team)** | [![GitHub stars](https://img.shields.io/github/stars/redcanaryco/atomic-red-team?style=social&color=white)](https://github.com/redcanaryco/atomic-red-team/stargazers) | Adversary Emulation & Testing | MIT | Small and highly portable detection tests mapped directly to the MITRE ATT&CK framework. Allows security engineers to emulate real adversary techniques and validate detection logic and countermeasures before an actual breach occurs. |
+| **[SigmaHQ/sigma](https://github.com/SigmaHQ/sigma)** | [![GitHub stars](https://img.shields.io/github/stars/SigmaHQ/sigma?style=social&color=white)](https://github.com/SigmaHQ/sigma/stargazers) | Detection Rule Standard | Detection Rule License | The industry standard for generic, vendor-agnostic detection rules. Threat hunters write rule logic once in YAML and convert it into target SIEM formats (Splunk, Elastic, QRadar, Microsoft Sentinel) using sigmac and pySigma compilers. |
+| **[OpenCTI-Platform/opencti](https://github.com/OpenCTI-Platform/opencti)** | [![GitHub stars](https://img.shields.io/github/stars/OpenCTI-Platform/opencti?style=social&color=white)](https://github.com/OpenCTI-Platform/opencti/stargazers) | Cyber Threat Intelligence (CTI) | Apache-2.0 | Unified open-source platform for structuring, storing, and visualizing cyber threat intelligence. Interoperates natively with STIX 2.1 and integrates deeply with MITRE ATT&CK to enrich adversary profiles and hunting hypotheses. |
+| **[VirusTotal/yara](https://github.com/VirusTotal/yara)** | [![GitHub stars](https://img.shields.io/github/stars/VirusTotal/yara?style=social&color=white)](https://github.com/VirusTotal/yara/stargazers) | Pattern Matching & Malware Classification | BSD-3-Clause | The de facto pattern matching Swiss army knife for malware researchers and threat hunters. Classifies malware samples, detects in-memory artifacts, and hunts file systems using customizable text and binary signature rules. |
+| **[zeek/zeek](https://github.com/zeek/zeek)** | [![GitHub stars](https://img.shields.io/github/stars/zeek/zeek?style=social&color=white)](https://github.com/zeek/zeek/stargazers) | Network Security Monitoring (NSM) | BSD-3-Clause | Powerful network analysis framework converting raw packets into structured protocol transaction logs, file extraction events, and behavioral anomaly telemetry for deep network threat hunting. |
+| **[mitre/caldera](https://github.com/mitre/caldera)** | [![GitHub stars](https://img.shields.io/github/stars/mitre/caldera?style=social&color=white)](https://github.com/mitre/caldera/stargazers) | Automated Adversary Emulation | Apache-2.0 | Cyber adversary emulation platform built directly on MITRE ATT&CK. Automates multi-stage cyber attack workflows, lateral movement simulation, and proactive defense verification across hybrid environments. |
+| **[OISF/suricata](https://github.com/OISF/suricata)** | [![GitHub stars](https://img.shields.io/github/stars/OISF/suricata?style=social&color=white)](https://github.com/OISF/suricata/stargazers) | Network IDS/IPS & Threat Detection | GPL-2.0 | High-performance multi-threaded network IDS, IPS, and network security monitoring engine. Supports Lua scripting, multi-gigabit line rates, and comprehensive protocol parsing for active countermeasure deployment. |
+| **[MISP/MISP](https://github.com/MISP/MISP)** | [![GitHub stars](https://img.shields.io/github/stars/MISP/MISP?style=social&color=white)](https://github.com/MISP/MISP/stargazers) | Threat Intelligence Sharing | AGPL-3.0 | Open-source threat intelligence platform for sharing, storing, and correlating Indicators of Compromise (IOCs), financial fraud indicators, and threat actor profiles across international communities. |
+| **[Velocidex/velociraptor](https://github.com/Velocidex/velociraptor)** | [![GitHub stars](https://img.shields.io/github/stars/Velocidex/velociraptor?style=social&color=white)](https://github.com/Velocidex/velociraptor/stargazers) | Endpoint Visibility & DFIR | AGPL-3.0 | Advanced digital forensics and endpoint visibility platform utilizing Velociraptor Query Language (VQL). Delivers continuous endpoint hunting at enterprise scale across thousands of endpoints with offline collection capabilities. |
+| **[TheHive-Project/TheHive](https://github.com/TheHive-Project/TheHive)** | [![GitHub stars](https://img.shields.io/github/stars/TheHive-Project/TheHive)](https://github.com/TheHive-Project/TheHive/stargazers) | Security Incident Response & SOAR | AGPL-3.0 | Scalable Security Incident Response Platform designed to streamline SOC workflows. Integrates with Cortex analyzers for automated observable enrichment, case management, and orchestrated triage. |
+| **[snort3/snort3](https://github.com/snort3/snort3)** | [![GitHub stars](https://img.shields.io/github/stars/snort3/snort3?style=social&color=white)](https://github.com/snort3/snort3/stargazers) | Network Intrusion Prevention | GPL-2.0 | Re-architected next-generation network intrusion detection and prevention system featuring multithreading, modular plug-ins, simplified rule syntax, and hyperscale packet inspection. |
+| **[elastic/detection-rules](https://github.com/elastic/detection-rules)** | [![GitHub stars](https://img.shields.io/github/stars/elastic/detection-rules?style=social&color=white)](https://github.com/elastic/detection-rules/stargazers) | Detection Engineering Repository | Elastic License v2 | Production detection rules maintained by Elastic Security Intelligence & Analytics team. Contains hundreds of battle-tested rules mapped to MITRE ATT&CK for hunting adversaries in cloud, host, and network data. |
+| **[ninedter/pcap-hunter](https://github.com/ninedter/pcap-hunter)** | [![GitHub stars](https://img.shields.io/github/stars/ninedter/pcap-hunter?style=social&color=white)](https://github.com/ninedter/pcap-hunter/stargazers) | AI-Assisted Threat Hunting Workbench | MIT | Purpose-built hunting workbench for SOC and DFIR analysts. Ingests raw PCAPs through a Zeek + tshark pipeline to execute C2/beacon detection, JA3 fingerprinting, MITRE mapping, and local/cloud LLM intelligence summaries. |
 
 ---
 
+## 🤝 How to Contribute
 
+We welcome community contributions from security analysts, detection engineers, and security researchers!
 
-**Made for security analysts, SOC teams, and organizations building transparent threat hunting solutions.**
+1. 🍴 **Fork the repository** on GitHub.
+2. 🌿 **Create a feature branch** (`git checkout -b feature/new-threat-hunting-tool`).
+3. 📝 **Add/update tools** following existing format (include tool name, official link, GitHub repository link, star badge, license, and objective technical summary).
+4. ✅ **Ensure accuracy**: Verify that URLs, pricing details, and licensing details are authentic and up to date.
+5. 🚀 **Submit a Pull Request** with a concise description of your additions.
 
-Let's make Adversary Threat Hunting & Countermeasures more open, data-driven, and adversary-aware.
+---
+
+## 💖 Support & Sponsorship
+
+If you find this curated adversary threat hunting repository valuable for your security operations, threat hunting research, or open-source detection engineering workflows:
+
+- ⭐ **Star this repository** to help other security engineers discover it.
+- 🍴 **Fork and share** with your SOC, DFIR, and red/blue security teams.
+- ☕ **Sponsor & Buy a Coffee**: Support ongoing maintenance, research, and curation through our **[GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007)**!
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Adversary-Threat-Hunting-Countermeasures&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Adversary-Threat-Hunting-Countermeasures&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- This repository is a **community-curated index** provided for informational and defensive educational purposes only.
+- Threat hunting platforms handling enterprise telemetry, network packets, and forensic artifacts must comply with data protection regulations (e.g., GDPR, CCPA, HIPAA) and enforce least-privilege access controls.
+- **Service Models vs. Tooling Distinction**:
+  - **Managed Threat Hunting Services** (e.g., *CrowdStrike OverWatch*, *Mandiant Managed Defense*, *Microsoft Defender Experts*, *Palo Alto Unit 42*, *Red Canary*) supply human hunt teams, proprietary global telemetry, and guided triage.
+  - **Cyber Threat Intelligence Platforms** (e.g., *Recorded Future*, *Flashpoint*, *OpenCTI*, *MISP*) curate adversary profiles, malware IOCs, and underground feeds.
+  - **Open-Source Workbenches & Detection Tooling** (e.g., *osquery*, *Atomic Red Team*, *Sigma*, *YARA*, *Velociraptor*, *pcap-hunter*, *Caldera*, *Suricata*) empower security teams to self-host custom telemetry pipelines and test adversary countermeasures without commercial software licensing.
+
+---
+
+<div align="center">
+
+**Built for security analysts, threat hunters, and detection engineers defending against modern adversaries.** 🛡️⚡
+
+</div>
